@@ -45,7 +45,7 @@ event Transfer(address indexed from, address indexed to, uint256 value);
 // Triggered whenever approve(address _spender, uint256 _value) is called.
 event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 
-function elixor() {
+function whitened() {
 name = "whitened";
 symbol = "WHIT";
 decimals = 18;
