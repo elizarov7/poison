@@ -53,7 +53,7 @@ function transfer(address _to, uint256 _amount) returns (bool success) {
 function createAmountFromWHITForAddress(uint256 amount,address addressProducing) public {
     if (msg.sender==whitAddress) {
         //extra auth
-        whitened WHITContract=elixor(whitAddress);
+        whitened WHITContract=whitened(whitAddress);
         if (WHITContract.returnAmountOfCURAAddressCanProduce(addressProducing)==amount){
             // They are burning WHIT to make CURA
             balances[addressProducing]+=amount;
